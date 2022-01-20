@@ -145,6 +145,7 @@
         }
 
         .el__excerpt{
+            max-width: 80%;
             font-weight: normal;
             font-size: 18px;
             line-height: 26px;
@@ -160,7 +161,7 @@
 
     &-roadmap{
         position: relative;
-        padding: 150px 0;
+        padding: 150px 0 50px;
         background: #E4EFFA;
         .el__map{
             margin-top: 150px;
@@ -301,7 +302,7 @@
     }
 
     &-token{
-        padding: 150px 0 20px;
+        padding: 150px 0 10px;
         background: #E4EFFA;
         .el__item {
             padding: 32px 16px;
@@ -623,6 +624,13 @@
             &__wrap{
                 position: relative;
             }
+            .sc__header {
+                text-align: center;
+            }
+            .el__excerpt{
+                max-width: 100%;
+            }
+
         }
         &-roadmap{
             .el__map {
