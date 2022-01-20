@@ -10,6 +10,7 @@
     &.is-sticky, &.-menu-mb-active{
     	padding:12px 0;
     	background:#247EAA;
+    	box-shadow: 0 0 4px #227494;
     }
     &__btn{
 		font-weight: 900;
@@ -66,10 +67,6 @@
 		&.is-sticky, &.-menu-mb-active{
     		padding:14px 0;
     	}
-    	&__group {
-    		display: flex;
-		    margin-right: 0;
-		}
 		&__btn {
 		    flex: 0 0 auto;
 		    flex-grow: 1;

@@ -109,11 +109,45 @@ $(document).ready(function(){
 
             }
         });
+
+        // Custom close
+        $('.js-menu__close').click(function(){
+            $('body').removeClass('modal-open')
+            $('body').removeClass('modal-open').css("padding-right","")
+            $(thiz).removeClass('active')
+            $(menu_id).removeClass('active')
+        })
+
+        // Menu
+        var el= $(menu_id).find(".nav__mobile--ul");
+        el.find(".menu-item-has-children>a").after('<button class="nav__mobile__btn"><i></i></button>'),
+
+        el.find(".nav__mobile__btn").on("click",function(e){
+            e.stopPropagation(),
+            $(this).parent().find('.sub-menu').first().is(":visible")?$(this).parent().removeClass("sub-active"):
+            $(this).parent().addClass("sub-active"),
+            $(this).parent().find('.sub-menu').first().slideToggle()
+        })
+
         // Apply options
         return;
     };
 
     $('.menu-mb__btn').dnmenu()
+
+
+    //
+    // ADd button menu children
+    var el= $('.account__sidebar').find("ul");
+    el.find(".menu-item-has-children>a").after('<button class="nav__mobile__btn"><i></i></button>'),
+
+    el.find(".nav__mobile__btn").on("click",function(e){
+        e.stopPropagation(),
+        $(this).parent().find('.sub-menu').first().is(":visible")?$(this).parent().removeClass("sub-active"):
+        $(this).parent().addClass("sub-active"),
+        $(this).parent().find('.sub-menu').first().slideToggle()
+    })
+
 
 
     //check home

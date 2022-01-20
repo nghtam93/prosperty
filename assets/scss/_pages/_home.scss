@@ -16,8 +16,20 @@
             align-items: center;
             z-index: 3;
         }
-
         .el{
+            &__thumb {
+                width: calc(100% + 20%);
+                position: absolute;
+                top: -26%;
+                right: -8%;
+                z-index: -1;
+                pointer-events: none;
+                 -webkit-animation: 2.5s ease-in-out infinite lightAnimation, Mousex 6s linear infinite;;
+                animation: 2.5s ease-in-out infinite lightAnimation, Mousex 6s linear infinite;;
+                .dnfix__thumb{
+                    padding-top:96%;
+                }
+            }
             .el__meta {
                 padding-right: 50px;
             }
@@ -84,6 +96,8 @@
             width: 45%;
             right: 0;
             bottom: 0;
+            -webkit-animation: 2.5s ease-in-out infinite lightAnimation;
+            animation: 2.5s ease-in-out infinite lightAnimation;
         }
     }
     &-service{
@@ -294,6 +308,10 @@
             box-shadow: 4px 3px 0 #40778e;
             text-align: center;
             margin-bottom: var(--bs-gutter-x);
+            transition: all .5s;
+            &:hover{
+                transform: translateY(-10px);
+            }
             &.-large{
                 max-width: 460px;
                 margin: 0 auto 30px;
@@ -403,6 +421,16 @@
             .el__excerpt {
                 font-size: 18px;
                 line-height: 28px;
+            }
+        }
+    }
+    @media (max-width: 1599px){
+        &-banner{
+            .el__thumb {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
             }
         }
     }
@@ -642,6 +670,16 @@
     @media (max-width: 767px){
         &-banner{
             min-height: 480px;
+            padding: 100px 0;
+            &__wrap{
+                position: relative;
+            }
+            .el__thumb {
+                position: relative;
+                max-width: 300px;
+                margin: 0 auto 30px;
+                height: auto;
+            }
             .el__title {
                 font-size: 32px;
                 line-height: 42px;

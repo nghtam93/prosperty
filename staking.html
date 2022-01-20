@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Prosperty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" />
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body class="account">
+    <header class="header -fix header__account" data-toggle="sticky-onscroll">
+      <div class="container container-xxl d-flex align-items-center">
+
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Logo">
+          </a>
+        </h1>
+
+        <div class="header__group ms-lg-auto d-none d-lg-flex">
+          <a href="" class="header__btn">TAKING</a>
+          <a href="" class="header__btn">FARMING</a>
+          <a href="" class="header__btn">WAP</a>
+        </div>
+        <div class="menu-mb__btn ms-auto" data-id="menu__mobile">
+          <span class="iconz-bar"></span>
+          <span class="iconz-bar"></span>
+          <span class="iconz-bar"></span>
+        </div>
+      </div>
+    </header>
+    <div class="account__wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col--left d-none d-lg-block">
+            <div class="account__sidebar">
+                <div>
+                  <ul class="el__menu">
+                    <li><a href="user-home.html"><i class="icon-home"></i>Home</a></li>
+                    <li class="menu-item-has-children">
+                      <a href=""><i class="icon-buy-sft"></i>Buy SFT</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="">Buy SFT</a></li>
+                        <li class="menu-item"><a href="">Buy SFT</a></li>
+                        <li class="menu-item"><a href="">Buy SFT</a></li>
+                      </ul>
+                    </li>
+                    <li class="active"><a href="staking.html"><i class="ic-stake"></i>Stake</a></li>
+                    <li><a href=""><i class="icon-withdraw"></i>Withdraw</a></li>
+                    <li><a href="user-info.html"><i class="icon-info"></i>Info</a></li>
+                  </ul>
+                </div>
+
+                <div class="account__sidebar__footer">
+                    <img src="images/logo.svg" alt="">
+                </div>
+            </div>
+
+          </div>
+          <div class="col col--right">
+            <div class="account__content">
+              <header class="ac__header mb-4">
+                <h2 class="ac__header__title">Safety</h2>
+              </header>
+              <div class="row mb-5">
+                <div class="col-md-6 d-sm-flex">
+                  <div class="el__box -small">
+                    <h6 class="mb-3"><strong>Balance SFT: 0.0000</strong></h6>
+                    <div class="el__box__iamount mb-4">
+                      <input type="text" class="form-control" placeholder="o">
+                      <div class="-amount__fix">SFT</div>
+                    </div>
+                    <div class="text-center">
+                      <button class="el__box__btn" data-bs-toggle="modal" data-bs-target="#notifiModal">Stake SFT</button>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-6 d-sm-flex">
+                  <div class="el__box -small">
+                    <h6 class="mb-3"><strong>Balance SFT: 0.00000</strong></h6>
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                          <div class="el__box__iamount mb-4">
+                            <input type="text" class="form-control" placeholder="o">
+                            <div class="-amount__fix">SFT</div>
+                          </div>
+                        </div>
+                        <div class="col-md-2 text-center mb-4">
+                          <i class="icon-transfer"></i>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="el__box__iamount mb-4">
+                            <input type="text" class="form-control" placeholder="o">
+                            <div class="-amount__fix">SFT</div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="el__box__btn" data-bs-toggle="modal" data-bs-target="#notifiModal">Stake SFT</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <header class="ac__header mb-4">
+                <h6 class="ac__header__sub mb-3">PERSONAL TITLE</h6>
+                <h2 class="ac__header__title">Check and manage your SFT</h2>
+              </header>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-6 d-sm-flex text-center">
+                  <div class="el__box -small">
+                    <h6 class="mb-4">% you can claim</h6>
+                    <p class="el__box__textlarge mb-4">0%</p>
+                    <div class="el__box__line mb-4"></div>
+                    <h5>Per month</h5>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-sm-flex text-center">
+                  <div class="el__box -small">
+                    <h6 class="mb-4">% you can claim</h6>
+                    <p class="el__box__textlarge mb-4">0%</p>
+                    <div class="el__box__line mb-4"></div>
+                    <h5>Per month</h5>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-sm-flex text-center">
+                  <div class="el__box -small">
+                    <h6 class="mb-4">SFT claimed</h6>
+                    <p class="el__box__textlarge mb-4">0.000000</p>
+                    <div class="el__box__line mb-4"></div>
+                    <h5>SFT</h5>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-sm-flex text-center">
+                  <div class="el__box -small">
+                    <h6 class="mb-4">SFT ready for claim</h6>
+                    <p class="el__box__textlarge mb-4">0.00000000</p>
+                    <div class="el__box__line mb-4"></div>
+                    <div class="text-center">
+                      <button class="el__box__btn" data-bs-toggle="modal" data-bs-target="#notifiModal">Claim</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="notifiModal" tabindex="-1" aria-labelledby="notifiModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-around">
+                <button type="button" class="modal__btn" data-bs-dismiss="modal">Approval</button>
+                <button type="button" class="modal__btn">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <nav id="menu__mobile" class="nav__mobile">
+          <div class="nav__mobile__content px-3">
+            <div class="header__group">
+              <a href="" class="header__btn">TAKING</a>
+              <a href="" class="header__btn">FARMING</a>
+              <a href="" class="header__btn">WAP</a>
+            </div>
+
+            <ul class="nav__mobile--ul">
+              <li><a href="user-home.html"><i class="icon-home"></i>Home</a></li>
+               <li class="menu-item-has-children">
+                <a href=""><i class="icon-buy-sft"></i>Buy SFT</a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="">Buy SFT</a></li>
+                  <li class="menu-item"><a href="">Buy SFT</a></li>
+                  <li class="menu-item"><a href="">Buy SFT</a></li>
+                </ul>
+              </li>
+              <li class="active"><a href="staking.html"><i class="ic-stake"></i>Stake</a></li>
+              <li><a href=""><i class="icon-withdraw"></i>Withdraw</a></li>
+              <li><a href="user-info.html"><i class="icon-info"></i>Info</a></li>
+            </ul>
+          </div>
+      </nav>
+
+    </div> <!-- .wrapper -->
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
