@@ -24,8 +24,8 @@
                 right: -8%;
                 z-index: -1;
                 pointer-events: none;
-                 -webkit-animation: 2.5s ease-in-out infinite lightAnimation, Mousex 6s linear infinite;;
-                animation: 2.5s ease-in-out infinite lightAnimation, Mousex 6s linear infinite;;
+                -webkit-animation: 2.5s ease-in-out infinite lightAnimation, Mousex 6s linear infinite;
+                animation: 2.5s ease-in-out infinite lightAnimation, Mousex 6s linear infinite;
                 .dnfix__thumb{
                     padding-top:96%;
                 }
@@ -167,8 +167,7 @@
             margin-top: 150px;
             position: relative;
             width: 100%;
-            padding-top:46.3%;
-            min-height: 740px;
+            min-height: 373px;
             background-image: url(../img/home-map.png);
             background-size: contain;
             background-repeat: no-repeat;
@@ -178,18 +177,18 @@
                 top: -20px;
                 left: 0;
                 right: 0;
-                width: 1477px;
+                width: 1437px;
                 max-width:100%;
-                height: 740px;
+                height: 373px;
                 margin: 0 auto;
-                background-image: url(../img/home-map-line.png);
+                background-image: url(../img/home-map-line-small.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
             }
             &__item{
                 position: absolute;
-                top: -7%;
+                top: -14%;
                 text-align: center;
                 .el__item{
                     &__date{
@@ -224,40 +223,23 @@
                         line-height: 21px;
                         text-align: center;
                         color: #24597A;
+                        max-width: 500px;
                     }
                 }
                 &.-s1{
-                    left: 3%;
+                    left: 0;
                 }
                 &.-s2{
-                    left: 26%;
+                    left: 40%;
+                }
+                &.-s3, &.-s4{
+                    top: 84.7%;
                 }
                 &.-s3{
-                    left: 50%;
-                }
-                &.-s4,&.-s5, &.-s6{
-                    top: 42.7%;
+                    left: 60%;
                 }
                 &.-s4{
-                    left: 12%;
-                }
-                &.-s5{
-                    left: 36%;
-                }
-                &.-s6{
-                    left: 62%;
-                }
-                &.-s7,&.-s8, &.-s9{
-                    top: 92.5%;
-                }
-                &.-s7{
-                    left: 24%;
-                }
-                &.-s8{
-                    left: 49%;
-                }
-                &.-s9{
-                  left: 75%;
+                    left: 22%;
                 }
             }
         }
@@ -274,6 +256,7 @@
                 margin: 0 auto;
             }
             .el__map__item2{
+                padding: 0 15px;
                 color: #24597A;
                 .el__item__title {
                     position: relative;
@@ -302,14 +285,15 @@
     }
 
     &-token{
-        padding: 150px 0 10px;
+        padding: 150px 0;
         background: #E4EFFA;
         .el__item {
             padding: 32px 16px;
             background: #fff;
             color: #000;
             border-radius: 8px;
-            box-shadow: 4px 3px 0 #40778e;
+            box-shadow: 4px 3px 0 #225c74;
+            border: 10px solid #247eaa;
             text-align: center;
             margin-bottom: var(--bs-gutter-x);
             transition: all .5s;
@@ -319,6 +303,8 @@
             &.-large{
                 max-width: 460px;
                 margin: 0 auto 30px;
+                -webkit-animation: 2s ease-in-out infinite lightAnimation;
+                animation: 2s ease-in-out infinite lightAnimation;
                 .el__item__title{
                     font-size: 22px;
                 }
@@ -381,6 +367,9 @@
         }
     }
     &-map{
+        .videoWrapper{
+            padding-top: 500px;
+        }
         .dnfix__thumb{
             min-height: 380px;
             padding-top: 43%;
@@ -441,52 +430,34 @@
     @media (max-width: 1499px){
 
         &-roadmap{
-            padding: 150px 0 10px;
+            padding: 100px 0 50px;
             .el__map{
-                min-height: 600px;
+                min-height: 307px;
                 &__line {
                     width: 1180px;
-                    height: 600px;
+                    height: 307px;
                 }
                 &__item{
-                    top: -8.5%;
+                    top: -17.5%;
                     .el__item__title {
                         font-size: 20px;
                         margin-bottom: 30px;
                     }
                     .el__item__excerpt {
+                        max-width: 400px;
                         font-size: 16px;
                     }
-                    &.-s4,&.-s5, &.-s6{
-                       top: 40.7%;
-                    }
-                    &.-s7,&.-s8, &.-s9{
-                        top: 90%;
-                    }
-
                     &.-s2 {
-                        left: 28%;
+
+                    }
+                    &.-s3,&.-s4{
+                       top: 81.5%;
                     }
                     &.-s3 {
                         left: 54%;
                     }
                     &.-s4 {
                         left: 14%;
-                    }
-                    &.-s5 {
-                        left: 41%;
-                    }
-                    &.-s6 {
-                        left: 70%;
-                    }
-                    &.-s7 {
-                        left: 27%;
-                    }
-                    &.-s8 {
-                        left: 52%;
-                    }
-                    &.-s9 {
-                        left: 79%;
                     }
                 }
             }
@@ -537,29 +508,26 @@
             padding: 80px 0 0;
         }
         &-roadmap {
-            padding: 80px 0 150px;
+            padding: 80px 0 100px;
             .el__map{
-                min-height: 500px;
+                min-height: 250px;
                 &__line {
                     width: 980px;
-                    height: 500px;
+                    height: 250px;
                 }
                 &__item{
-                    top: -10%;
+                    top: -22%;
                     .el__item__title {
                         font-size: 20px;
                         margin-bottom: 20px;
                     }
                     .el__item__excerpt {
-                        max-width: 90%;
+                        max-width: 350px;
                         margin: 0 auto;
                         font-size: 14px;
                     }
-                    &.-s4,&.-s5, &.-s6{
-                       top: 39%;
-                    }
-                    &.-s7,&.-s8, &.-s9{
-                        top: 88%;
+                    &.-s3,&.-s4{
+                       top: 78%;
                     }
                 }
             }
@@ -634,13 +602,13 @@
         }
         &-roadmap{
             .el__map {
-                min-height: 380px;
+                min-height: 200px;
                 &__line {
                     width: 750px;
-                    height: 380px;
+                    height: 200px;
                 }
                 &__item {
-                    top: -11.5%;
+                    top: -21.5%;
                     .el__item__date{
                         margin-bottom: 24px;
                         padding-bottom: 24px;
@@ -650,15 +618,21 @@
                             height: 14px;
                         }
                     }
+                    .el__item__excerpt {
+                        max-width: 300px;
+                    }
                     .el__item__title {
                         font-size: 18px;
                         margin-bottom: 10px;
                     }
-                    &.-s4, &.-s5, &.-s6 {
-                        top: 38%;
+                    &.-s3, &.-s4 {
+                        top: 75%;
                     }
-                    &.-s7, &.-s8, &.-s9 {
-                        top: 87%;
+                    &.-s2, &.-s3 {
+                        left: 42%;
+                    }
+                    &.-s4{
+                        left: 0;
                     }
                 }
             }
@@ -714,10 +688,10 @@
                 }
                 &__line {
                     width: 550px;
-                    height: 300px;
+                    height: 145px;
                 }
                 &__item{
-                    top: -8.5%;
+                    top: -24.5%;
                     .el__item__date {
                         margin-bottom: 24px;
                         padding-bottom: 14px;
@@ -731,11 +705,14 @@
                         display: none;
                     }
 
-                    &.-s4, &.-s5, &.-s6 {
-                        top: 37.5%;
+                    &.-s3, &.-s4 {
+                        top: 73.5%;
                     }
-                    &.-s7, &.-s8, &.-s9 {
-                        top: 83.5%;
+                    &.-s3 {
+                        left: 60%;
+                    }
+                    &.-s4 {
+                        left: 20%;
                     }
                 }
 
@@ -758,24 +735,21 @@
         &-roadmap{
             .el__map {
                 margin-top: 100px;
-                min-height: 165px;
+                min-height: 85px;
                 margin-bottom: 50px;
                 &__line {
                     width: 320px;
-                    height: 165px;
+                    height: 85px;
                 }
                 &__item {
-                    top: -17.5%;
+                    top: -35.5%;
                     .el__item__date {
                         font-size: 12px;
                         margin-bottom: 16px;
                         padding-bottom: 8px;
                     }
-                    &.-s4, &.-s5, &.-s6 {
-                        top: 31%;
-                    }
-                    &.-s7, &.-s8, &.-s9 {
-                        top: 78.5%;
+                    &.-s3, &.-s4 {
+                        top: 61%;
                     }
                 }
 
