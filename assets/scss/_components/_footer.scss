@@ -66,7 +66,7 @@
 	}
 
 	@media (max-width: 1399px){
-		padding: 80px 0;
+		padding: 80px 0 10px;
 		&__title {
 		    font-size: 32px;
 		    line-height: 32px;
@@ -108,7 +108,7 @@
 		}
 	}
 	@media (max-width: 767px){
-		padding: 40px 0;
+		padding: 40px 0 0;
 		&__logo img {
 		    max-height: 150px;
 		}
